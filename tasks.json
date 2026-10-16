@@ -1,0 +1,56 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run LabelLens backend",
+			"type": "shell",
+			"command": "C:\\Users\\SANTHOSH\\OneDrive\\Desktop\\AKHIL\\backend\\.venv\\Scripts\\python.exe",
+			"args": [
+				"-m",
+				"uvicorn",
+				"app.main:app",
+				"--reload",
+				"--host",
+				"127.0.0.1",
+				"--port",
+				"8000"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run LabelLens backend (app dir)",
+			"type": "shell",
+			"command": "C:\\Users\\SANTHOSH\\OneDrive\\Desktop\\AKHIL\\backend\\.venv\\Scripts\\python.exe",
+			"args": [
+				"-m",
+				"uvicorn",
+				"--app-dir",
+				"backend",
+				"app.main:app",
+				"--reload",
+				"--host",
+				"127.0.0.1",
+				"--port",
+				"8000"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run LabelLens frontend",
+			"type": "shell",
+			"command": "C:\\Users\\SANTHOSH\\AppData\\Local\\Microsoft\\WinGet\\Packages\\OpenJS.NodeJS.LTS_Microsoft.Winget.Source_8wekyb3d8bbwe\\node-v24.20.0-win-x64\\node.exe",
+			"args": [
+				"C:\\Users\\SANTHOSH\\OneDrive\\Desktop\\AKHIL\\frontend\\node_modules\\vite\\bin\\vite.js",
+				"C:\\Users\\SANTHOSH\\OneDrive\\Desktop\\AKHIL\\frontend",
+				"--host",
+				"127.0.0.1",
+				"--port",
+				"5173"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}
